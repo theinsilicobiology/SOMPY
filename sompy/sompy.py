@@ -22,12 +22,18 @@ from scipy.sparse import csr_matrix
 from sklearn import neighbors
 from sklearn.externals.joblib import Parallel, delayed, load, dump
 import sys
-
-from .decorators import timeit
-from .codebook import Codebook
-from .neighborhood import NeighborhoodFactory
-from .normalization import NormalizatorFactory
-
+#
+# relative imports disabled for temporary development
+#from .decorators import timeit
+#from .codebook import Codebook
+#from .neighborhood import NeighborhoodFactory
+#from .normalization import NormalizatorFactory
+#
+from decorators import timeit
+from codebook import Codebook
+from neighborhood import NeighborhoodFactory
+from normalization import NormalizatorFactory
+#
 #lbugnon
 import sompy,ipdb
 #

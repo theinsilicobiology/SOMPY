@@ -1,4 +1,6 @@
-from .view import MatplotView
+# relative imports disabled for temporary development
+#from .view import MatplotView
+from view import MatplotView
 from matplotlib import pyplot as plt
 import numpy as np
 
