@@ -1,7 +1,7 @@
 #
 # relative imports disabled for temporary development
-#from .view import MatplotView
-from view import MatplotView
+from .view import MatplotView
+#from view import MatplotView
 
 from matplotlib import pyplot as plt
 from pylab import imshow, contour

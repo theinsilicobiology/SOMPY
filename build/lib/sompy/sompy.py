@@ -22,27 +22,30 @@ from scipy.sparse import csr_matrix
 from sklearn import neighbors
 from sklearn.externals.joblib import Parallel, delayed, load, dump
 import sys
-
+#
+# relative imports disabled for temporary development
 from .decorators import timeit
 from .codebook import Codebook
 from .neighborhood import NeighborhoodFactory
 from .normalization import NormalizatorFactory
-
+#
+#from decorators import timeit
+#from codebook import Codebook
+#from neighborhood import NeighborhoodFactory
+#from normalization import NormalizatorFactory
+#
 #lbugnon
 import sompy,ipdb
 #
-
 class ComponentNamesError(Exception):
     pass
-
-
+#
 class LabelsError(Exception):
     pass
-
-
+#
 class SOMFactory(object):
-
     @staticmethod
+    #
     def build(data,
               mapsize=None,
               mask=None,
@@ -271,7 +274,7 @@ class SOM(object):
         ms, mpd = self._calculate_ms_and_mpd()
         #lbugnon: add maxtrainlen
         trainlen = min(int(np.ceil(30*mpd)),maxtrainlen) if not trainlen else trainlen
-        print("maxtrainlen %d",maxtrainlen)
+        #print("maxtrainlen %d",maxtrainlen)
         #lbugnon: add trainlen_factor
         trainlen=int(trainlen*trainlen_factor)
         
@@ -301,7 +304,7 @@ class SOM(object):
             radiusin = max(1, np.ceil(ms/8.)/4) if not radiusin else radiusin
             radiusfin = 1 if not radiusfin else radiusfin # max(1, ms/128)
 
-        print("maxtrainlen %d",maxtrainlen)
+        #print("maxtrainlen %d",maxtrainlen)
         
         #lbugnon: add trainlen_factor
         trainlen=int(trainlen_factor*trainlen)

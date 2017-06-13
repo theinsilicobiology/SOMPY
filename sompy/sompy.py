@@ -24,31 +24,28 @@ from sklearn.externals.joblib import Parallel, delayed, load, dump
 import sys
 #
 # relative imports disabled for temporary development
-#from .decorators import timeit
-#from .codebook import Codebook
-#from .neighborhood import NeighborhoodFactory
-#from .normalization import NormalizatorFactory
+from .decorators import timeit
+from .codebook import Codebook
+from .neighborhood import NeighborhoodFactory
+from .normalization import NormalizatorFactory
 #
-from decorators import timeit
-from codebook import Codebook
-from neighborhood import NeighborhoodFactory
-from normalization import NormalizatorFactory
+#from decorators import timeit
+#from codebook import Codebook
+#from neighborhood import NeighborhoodFactory
+#from normalization import NormalizatorFactory
 #
 #lbugnon
 import sompy,ipdb
 #
-
 class ComponentNamesError(Exception):
     pass
-
-
+#
 class LabelsError(Exception):
     pass
-
-
+#
 class SOMFactory(object):
-
     @staticmethod
+    #
     def build(data,
               mapsize=None,
               mask=None,

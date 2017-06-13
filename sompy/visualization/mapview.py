@@ -1,8 +1,8 @@
 import matplotlib
 #
 # relative imports disabled for temporary development
-#from .view import MatplotView
-from view import MatplotView
+from .view import MatplotView
+#from view import MatplotView
 
 from matplotlib import pyplot as plt
 import numpy as np
@@ -106,7 +106,7 @@ class View2D(MapView):
             ax.set_xticklabels([])
             plt.colorbar(pl)
 
-        #plt.show()
+        plt.show()
 
 
 class View2DPacked(MapView):

@@ -26,6 +26,9 @@ dictConfig({
 })
 
 
-
+#
+# relative imports disabled for temporary development
 from .sompy import SOMFactory
 from .visualization import *
+#from sompy import SOMFactory
+#from visualization import *

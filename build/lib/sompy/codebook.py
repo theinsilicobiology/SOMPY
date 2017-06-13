@@ -2,8 +2,11 @@ import numpy as np
 
 from sklearn.decomposition import PCA
 #from sklearn.decomposition import RandomizedPCA# (randomizedpca is deprecated)
+#
+# relative imports disabled for temporary development
 from .decorators import timeit
-
+#from decorators import timeit
+#
 
 class InvalidNodeIndexError(Exception):
     pass

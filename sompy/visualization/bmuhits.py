@@ -4,8 +4,8 @@ import matplotlib
 import numpy as np
 from matplotlib import pyplot as plt
 # relative imports disabled for temporary development
-#from .mapview import MapView
-from mapview import MapView
+from .mapview import MapView
+#from mapview import MapView
 
 
 class BmuHitsView(MapView):
