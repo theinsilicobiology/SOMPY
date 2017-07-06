@@ -6,7 +6,7 @@ from .view import MatplotView
 
 from matplotlib import pyplot as plt
 import numpy as np
-import ipdb
+#import ipdb
 
 
 class MapView(MatplotView):

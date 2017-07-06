@@ -35,7 +35,7 @@ from .normalization import NormalizatorFactory
 #from normalization import NormalizatorFactory
 #
 #lbugnon
-import sompy,ipdb
+import sompy#,ipdb
 #
 class ComponentNamesError(Exception):
     pass
